@@ -245,6 +245,73 @@ body {
 }
 
 
+/* /////////////////////////////////DIRECTION//////////////////////////////////// */
+
+.direction {
+    padding: 100px 0px;
+}
+
+.direction_wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.direction_item {
+    max-width: 256px;
+}
+
+.direction_text {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #dedede;
+    border-top: none;
+    padding: 12px 19px 19px;
+}
+
+.direction_img {
+    display: block;
+}
+
+
+/* ////////////////////////////////////MAIN DIRECTION ///////////////////////// */
+
+.main_direction {
+    background-image: url(../img/main-direction-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 30px 0px 50px;
+}
+
+.main_direction-title {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.main_direction-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 54px 67px;
+}
+
+.direction_item-img {
+    margin-bottom: 16px;
+}
+
+.directon_item-text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
 /* /////////////////////////////////////ADAPTIV///////////////////////////////// */
 
 @media (max-width:1200px) {
