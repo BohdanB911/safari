@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/jquery.fancybox.css"> -->
     <link rel="stylesheet" href="./css/magnific-popup.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -247,16 +246,19 @@
         <section class="section_about">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 _tex">
                         <h3 class="about_title title">О сафари турах</h3>
                         <p class="about_text">Восточная и Южная Африка являются самыми популярными местами, где можно насладиться увлекательным путешествием, под названием сафари. Именно здесь созданы все условия, чтобы туристы могли почувствовать себя частичкой девственной
-                            природы Африки. Туры сафари в Африку характеризуются уникальными программами, в рамках которых туристы перемещаются на комфортабельных, специализированных автомобилях или автобусах.Lorem, ipsum <span id="dots">...</span>
-                            <span id="more">dolor sit amet consectetur adipisicing elit. Molestias voluptas corporis vel natus maxime mollitia tempora, at fugit velit unde. At officia odio perferendis corrupti culpa eum eos laudantium dicta.</span>
+                            природы Африки. Туры сафари в Африку характеризуются уникальными программами, в рамках которых туристы перемещаются на комфортабельных, специализированных автомобилях или автобусах.Lorem, ipsum dolor sit amet consectetur
+                            <span id="dots">...</span>
+                            <div id="more">adipisicing elit. Molestias voluptas corporis vel natus maxime mollitia tempora, at fugit velit unde. At officia odio perferendis corrupti culpa eum eos laudantium dicta.</div>
                         </p>
                         <a class="about_link" href="#">Читать подробней</a>
                     </div>
                     <div class="col-12 col-lg-6 about_popup-wrap">
-                        <img class="play_img" src="./img/play.svg" alt="play">
+                        <a class="popup-link" href="//www.youtube.com/watch?v=sR3DHCVov7s&ab_channel=lyapisvideo">
+                            <img class="play_img" src="./img/play.svg" alt="play">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -303,18 +305,109 @@
                     </div>
                 </div>
         </section>
+        <section class="premium_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="premium_title title">Сафари тур премиум класса</h2>
+                    </div>
+                    <div class="col-lg-6 premium_text-wrap _text">
+                        <p class="premium_text">Сафари тур ? это уникальное путешествие в мир дикой природы, знакомство с многогранной Африкой, наблюдение за дикими животными в их привычной среде обитания.</p>
+                        <p class="premium_text"><span>САФАРИ ТУРИСТИК</span> специализируется на элитном туризме и представляет своим клиентам уникальные программы сафари туров.Среди представленных вариантов можно найти нечто неповторимое, по вашему вкусу.</p>
+                        <p class="premium_text">Если вы желаете отправиться в самое незабываемое путешествие в вашей жизни, побывать в уникальных местах и увидеть то, что удается лицезреть немногим ? тогда сафари туры созданы для вас.</p>
+                    </div>
+                    <div class="col-lg-6 premium_text-wrap">
+                        <p class="premium_text">Сафари туры выбирают туристы, которые предпочитают динамичный, яркий, насыщенный эмоциями и впечатлениями отдых.</p>
+                        <p class="premium_text">Программы сафари туров по Африке рассчитаны на определенную группу людей, которые под покровительством куратора, осуществляют увлекательное путешествие по заранее спланированному маршруту. Мы ориентированы на клиентов VIP класса,
+                            поэтому все предложения, представленные в нашей коллекции, отличаются высшим классом, детально продуманной программой, первоклассным сервисом и индивидуальным подходом к каждому участнику путешествия. У нас на сайте вы можете
+                            прочитать все подробности о программах уже сформированных туров по сафари.
+                        </p>
+                    </div>
+                    <div class="col-12 premium_info-wrap p-0">
+                        <div class="premium_info-item">
+                            16
+                            <p class="info_item-text">лет успешной<br> работы</p>
+                        </div>
+                        <div class="premium_info-item">
+                            50
+                            <p class="info_item-text">гостиниц без<br> посредников</p>
+                        </div>
+                        <div class="premium_info-item">
+                            25+
+                            <p class="info_item-text">собственныx<br> туров</p>
+                        </div>
+                        <div class="premium_info-item">
+                            1 220 000
+                            <p class="info_item-text">кв. км – площадь наших<br> путешествий</p>
+                        </div>
+                        <div class="premium_info-item">
+                            5000
+                            <p class="info_item-text">довольных<br> туристов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <section class="reservation_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="reservation_title  title">Забронируйте отдых в Африке</h3>
+                        <form class="reservation_form">
+                            <input class="resetvation_input" type="text" placeholder="Ваше имя">
+                            <input class="resetvation_input" type="text" placeholder="Телефон">
+                            <input class="resetvation_input" type="text" placeholder="E-mail">
+                            <textarea class="reservation_area" placeholder="Комментарий"></textarea>
+                            <button class="reservation_btn" type="submit">Отправить заявку</button>
+                            <label class="reservation_label">
+                                <input class="reservation_checkbox" type="checkbox">
+                                <span class="reservation_checkbox-span"></span>
+                                Согласие на обработку персональных данных
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer_contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="footer_logo">
+                            <a href="#" class="footer_logo-link">
+                                <div class="img_wrap ">
+                                    <img src="./img/header_logo.svg " alt="logo ">
+                                </div>
+                                <h4>Сафари ТУРИСТИК<br><span>Турагентство</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 footer_contacts-wrap">
+                        <ul class="footer_contacts-list">
+                            <li class="contacts_list-item">Турагентство «Сафари Туристик»</li>
+                            <li class="contacts_list-item">© 2021. Все права защищены</li>
+                            <li class="contacts_list-item"><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                        <ul class="footer_contacts-list">
+                            <li class="contacts_list-item">Адрес:</li>
+                            <li class="contacts_list-item">г. Киев, ул.Мира, 20,</li>
+                            <li class="contacts_list-item">отель «Динамо», 1 этаж</li>
+                        </ul>
+                        <ul class="footer_contacts-list">
+                            <li class="contacts_list-item">Заказ туров и бронирование:</li>
+                            <li class="contacts_list-item">тел. 8-050-8-543-543</li>
+                            <li class="contacts_list-item">e-mail: safari_turistic@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
 
-
-    <!-- about_popup -->
-    <div class="popup_wrap">
-        <div class="this_popup">
-            <img class="close_btn" src="./img/close.svg" alt="close">
-            <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/y1uRk8kgVh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
 
 
 
@@ -331,8 +424,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.magnific-popup.js"></script>
-    <!-- <script src="./js/jquery.fancybox.js"></script> -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js "></script>
     <script src="./js/main.js "></script>
 </body>
