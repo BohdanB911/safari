@@ -1,44 +1,50 @@
-// ////////////read more/////
+// burger
+const burger = document.querySelector('.burger_btn');
+burger.addEventListener('click', function() {
+    const showMenu = document.querySelector('.header_adaptive-nav');
+    const body = document.querySelector('body');
 
-const dots = document.getElementById('dots');
-const more = document.getElementById('more');
-const clickLink = document.querySelector('.about_link');
-
-clickLink.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if (dots.style.display === 'none') {
-        dots.style.display = 'inline';
-        clickLink.innerHTML = 'Читать подробней';
-        $('#more').slideToggle(700)
-    } else {
-        dots.style.display = 'none';
-        clickLink.innerHTML = 'Скрыть';
-        $('#more').slideToggle(700)
-    }
-})
-
-
-
+    showMenu.classList.toggle('header_adaptive-nav--active');
+    body.classList.toggle('no-scroll');
+});
 
 $(document).ready(function() {
+    // ///////////////light scroll///
+
+    $('.header_btn').on('click', function(e) {
+        e.preventDefault()
+        const form = document.querySelector('.reservation_section')
+        form.scrollIntoView({
+            block: "center",
+            behavior: "smooth"
+        });
+    });
+
+    // ////////////read more/////
+
+    const dots = document.getElementById('dots');
+    const clickLink = document.querySelector('.about_link');
+
+    clickLink.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (dots.style.display === 'none') {
+            dots.style.display = 'inline';
+            clickLink.innerHTML = 'Читать подробней';
+            $('#more').slideToggle(500)
+        } else {
+            dots.style.display = 'none';
+            clickLink.innerHTML = 'Скрыть';
+            $('#more').slideToggle(500)
+        }
+    });
+
+
     $('.slider_wrap').slick({
         nextArrow: '<button class="slick-arrow slick-next"><img src="./img/next.svg" alt="next arrow"></button>',
         prevArrow: '<button class="slick-arrow slick-prev"><img src="./img/prev.svg" alt="prev arrow"></button>',
     });
 
-
-
-
-    $('.popup-link').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-
-        fixedContentPos: false
-    });
 
     $('.slick-arrow').on('click', function() {
         $('.slick-active').magnificPopup({
@@ -46,6 +52,9 @@ $(document).ready(function() {
             type: 'image',
             tLoading: 'Loading image #%curr%...',
             mainClass: 'mfp-img-mobile',
+            closeOnBgClick: false,
+            tClose: 'Close (Esc)',
+            autoFocusLast: false,
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
@@ -60,6 +69,9 @@ $(document).ready(function() {
         type: 'image',
         tLoading: 'Loading image #%curr%...',
         mainClass: 'mfp-img-mobile',
+        closeOnBgClick: false,
+        tClose: 'Close (Esc)',
+        autoFocusLast: false,
         gallery: {
             enabled: true,
             navigateByImgClick: true,
